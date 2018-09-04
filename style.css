@@ -1,77 +1,84 @@
+html, body{
+    margin: 0;
+}
 body {
     background-color: #f1f1f1;
-    padding: 20px;
     font-family: 'Quicksand', sans-serif;
 }
-
-/* Center website */
-.main {
+/* .main {
     max-width: 1000px;
     margin: auto;
-}
+} */
 
-.heading{
+ .main-heading{
+    height: 200px;
+    width: 100%;
+    background-color: #3376bb;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+
 }
 
-span{
-    font-size: 30px;
+.navbar{
+    width: 90%;
+    margin-top:20px; 
+}
+#heading-icon{
+    background-image: url('images/1761eac3b1967fa6e4cafb6af110abcc.png');
+    background-position: center;
+    background-size: cover;
+    width: 209px;
+    height: 63px;
 }
 
-h1 {
-    font-size: 40px;
-}
+
 
 .row {
-    margin: 8px -16px;
+    margin: 8px 0;
+    width: 100%;
 }
 
-/* Add padding BETWEEN each column */
-.row,
 .row > .column {
     padding: 8px;
 }
-
-/* Create four equal columns that floats next to each other */
 .column {
     float: left;
     width: 25%;
-}
-
-/* Clear floats after rows */ 
+} 
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Content */
-.content {
+.card{
     background-color: #ffffff;
     padding: 10px;
 }
 
-h2{
+.card-title{
      font-size: 30px;
 }
 
-h3{
+/* h3{
     font-size: 25px;
-}   
+}    */
 
-p{
+.card-text{
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
-.img-1{
+.card-img-top{
     width:100% ;
     height:303px;
     background-size: cover;
     background-position: center;
-    background-image: url('images/1.jpg');
+    /* background-image: url('images/1.jpg'); */
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
